@@ -757,7 +757,7 @@ Starting terminal...</div>
             const line = document.createElement('div');
             line.className = 'terminal-line ' + className;
             line.textContent = text;
-            terminalBody.insertBefore(line, currentInputLine);
+            terminalBody.appendChild(line);
             terminalBody.scrollTop = terminalBody.scrollHeight;
             
             // Play sound effect
